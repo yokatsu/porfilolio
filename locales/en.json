@@ -1,0 +1,104 @@
+{
+  "defaultSeo": {
+    "title": "Yuri Oliveira | Fullstack developer",
+    "description": "Yuri Oliveira is a Fullstack developer, experienced in creating beautiful and functional websites, web applications and App.",
+    "url": "https://www.vercel.com/",
+    "previewImage": "https://user-images.githubusercontent.com/4708484/93688063-050a8980-fa91-11ea-89ca-3530a9038393.png"
+  },
+  "heroData": {
+    "greetings": "HELLO, ",
+    "introduction": "I'm Yuri Oliveira",
+    "role": "Fullstack Developer",
+    "paragraph": "Passionate about coding, and making my client ideas come true.",
+    "button1": "Check my work",
+    "button2": "Contact me"
+  },
+  "aboutData": {
+    "aboutTitle": "About me",
+    "aboutItems": [
+      "I'm a fullstack developer based in Rio de Janeiro, Brazil.",
+      "I like to design and build beautiful and functional websites and web applications, taking special care to produce clear and understandable code.",
+      "I love teamwork and good communication, always open to feedback and willing to learn new things.",
+      "In my free time I like to play the guitar, read a good book or play videogames."
+    ],
+    "resumeTitle": "Resumé",
+    "resumeParagraph": "You can check my resumé in the link below.",
+    "resumeButton": "Resumé",
+    "resumeLink": "/resume/resume-en.pdf",
+    "skillsTitle": "Skills"
+  },
+  "portfolioData": {
+    "portfolioTitle": "Portfolio",
+    "projects": [
+      {
+        "name": "LedBox - App de lanterna",
+        "projectUrl": "https://play.google.com/store/apps/details?id=com.yurk.ledbox&gl=US",
+        "repoUrl": "https://github.com/kelvinsanchez15/issueless",
+        "imgPath": "projectMedia/ledbox.jpeg",
+        "imgAlt": "Ledbox preview",
+        "summary": "Ledbox, A app to iluminate your environment.",
+        "keyFeatures": [
+          "Keep your screen on",
+          "Utils for tests",
+          "Turn on and turn off",
+          "Dark theme"
+        ],
+        "technologies": [
+          "Android",
+          "Java"
+        ]
+      },
+      {
+        "name": "Lanchee - App de cardapio",
+        "projectUrl": "https://play.google.com/store/apps/details?id=br.com.lanchee",
+        "repoUrl": "https://github.com/yokatsu",
+        "imgPath": "projectMedia/lanchee.jpeg",
+        "imgAlt": "Lanchee preview",
+        "summary": "Lanchee - Food menu, A Webapp to find good fast foods in your city.",
+        "keyFeatures": [
+          "Login and Register",
+          "Admin panel for shops",
+          "Social network layout"
+        ],
+        "technologies": ["Html", "CSS", "JQuery", "Android","Java"]
+      },
+      {
+        "name": "Motim",
+        "projectUrl": "https://motim-inky.vercel.app/",
+        "repoUrl": "https://github.com/yokatsu/Motim",
+        "imgPath": "projectMedia/motim.jpeg",
+        "imgAlt": "Motim website preview",
+        "summary": "Motim, a moto service site.",
+        "keyFeatures": [
+          "See the moto events",
+          "Join to MotoClubs",
+          "Promote your moto event"
+        ],
+        "technologies": ["NextJS", "Javascript"]
+      }
+    ]
+  },
+  "blogData": {
+    "featuredArticle": "Featured Article",
+    "mostRecent": "Most Recent",
+    "button": "More Articles"
+  },
+  "contactData": {
+    "title": "Contact",
+    "p1": "If you are interested in hiring me for your project please use the form below to get in touch. Want to know how I work and what I can offer? Check out my ",
+    "p2": "portfolio",
+    "p3": " and ",
+    "p4": "resumé",
+    "resumeLink": "/resume/resume-en.pdf",
+    "subtitle": "You can also find me on the following channels",
+    "formTitle": "Get in touch",
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "placeholder": "Feel free to include any details.",
+    "submitButton": "send",
+    "requiredErrorMessage": "Required",
+    "invalidEmailErrorMessage": "Invalid email format"
+  }
+}
