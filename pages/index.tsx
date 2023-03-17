@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import Script from 'next/script'
+import Script from 'next/script';
 
 import HeroSection from '../components/home/HeroSection';
 import AboutSection from '../components/home/AboutSection';
