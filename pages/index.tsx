@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import Script from 'next/script';
+//import Script from 'next/script';
 
 import HeroSection from '../components/home/HeroSection';
 import AboutSection from '../components/home/AboutSection';
@@ -60,8 +60,8 @@ export default function Index({
       <PortfolioSection portfolioData={portfolioData} />
       <BlogSection blogData={blogData} />
       <ContactSection contactData={contactData} />
-      <div>
-         <!-- Google tag (gtag.js) -->
+     <!--  <div>
+         Google tag (gtag.js) 
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7"/>
     <Script
       id='google-analytics'
@@ -77,7 +77,7 @@ export default function Index({
         `,
         }}
     />
-      </div>
+      </div>-->
     </>
   );
 }
