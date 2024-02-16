@@ -1,13 +1,10 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-//import Script from 'next/script';
-
 import HeroSection from '../components/home/HeroSection';
 import AboutSection from '../components/home/AboutSection';
 import PortfolioSection from '../components/home/PortfolioSection';
 import BlogSection from '../components/home/BlogSection';
 import ContactSection from '../components/home/ContactSection';
-
 import Script from 'next/script';
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
@@ -56,21 +53,22 @@ export default function Index({
         <meta key="ogurl" content={url} property="og:url" />
         <meta key="ogimage" content={previewImage} property="og:image" />
 
-         <Script strategy="afterInteractive"src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7"/>
-    <Script
-      id='google-analytics'
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: `
-          window.dataLayer = window.dataLayer || [];
-          functiongtag(){dataLayer.push(arguments)};
-          gtag('js', newDate());
-          gtag('config', 'G-KJGJKYN5P7', {
-            page_path: window.location.pathname,
-          });
-        `,
-        }}
-    />
+        {/* Google Analytics */}
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7" />
+        <Script
+          id='google-analytics'
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments)};
+              gtag('js', new Date());
+              gtag('config', 'G-KJGJKYN5P7', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
       </Head>
 
       <HeroSection heroData={heroData} />
