@@ -8,6 +8,8 @@ import PortfolioSection from '../components/home/PortfolioSection';
 import BlogSection from '../components/home/BlogSection';
 import ContactSection from '../components/home/ContactSection';
 
+import Script from 'next/script';
+
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const response = await import(`../locales/${locale}.json`);
 
@@ -61,14 +63,21 @@ export default function Index({
       <BlogSection blogData={blogData} />
       <ContactSection contactData={contactData} />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KJGJKYN5P7');
-</script>
+      <Script strategy="afterInteractive"src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7"/>
+    <Script
+      id='google-analytics'
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          functiongtag(){dataLayer.push(arguments);}
+          gtag('js', newDate());
+          gtag('config', 'G-KJGJKYN5P7', {
+            page_path: window.location.pathname,
+          });
+        `,
+        }}
+    />
     </>
   );
 }
