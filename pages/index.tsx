@@ -63,7 +63,7 @@ export default function Index({
       dangerouslySetInnerHTML={{
         __html: `
           window.dataLayer = window.dataLayer || [];
-          functiongtag(){dataLayer.push(arguments);}
+          functiongtag(){dataLayer.push(arguments)};
           gtag('js', newDate());
           gtag('config', 'G-KJGJKYN5P7', {
             page_path: window.location.pathname,
