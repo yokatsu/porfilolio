@@ -52,24 +52,24 @@ export default function Index({
         <meta content="website" property="og:type" />
         <meta key="ogurl" content={url} property="og:url" />
         <meta key="ogimage" content={previewImage} property="og:image" />
-
-        {/* Google Analytics */}
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7" />
-        <Script
-          id='google-analytics'
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments)};
-              gtag('js', new Date());
-              gtag('config', 'G-KJGJKYN5P7', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
       </Head>
+
+      {/* Google Analytics */}
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7" />
+      <Script
+        id='google-analytics'
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+            gtag('config', 'G-KJGJKYN5P7', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
 
       <HeroSection heroData={heroData} />
       <AboutSection aboutData={aboutData} />
