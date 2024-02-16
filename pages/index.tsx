@@ -52,6 +52,7 @@ export default function Index({
         <meta content="website" property="og:type" />
         <meta key="ogurl" content={url} property="og:url" />
         <meta key="ogimage" content={previewImage} property="og:image" />
+        <meta name="google-site-verification" content="yUkrfQxDi1K5qygjBEgDmxL03YrvxHDnLuV818osUMo" />
       </Head>
 
       {/* Google Analytics */}
