@@ -55,15 +55,8 @@ export default function Index({
         <meta content="website" property="og:type" />
         <meta key="ogurl" content={url} property="og:url" />
         <meta key="ogimage" content={previewImage} property="og:image" />
-      </Head>
 
-      <HeroSection heroData={heroData} />
-      <AboutSection aboutData={aboutData} />
-      <PortfolioSection portfolioData={portfolioData} />
-      <BlogSection blogData={blogData} />
-      <ContactSection contactData={contactData} />
-
-      <Script strategy="afterInteractive"src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7"/>
+         <Script strategy="afterInteractive"src="https://www.googletagmanager.com/gtag/js?id=G-KJGJKYN5P7"/>
     <Script
       id='google-analytics'
       strategy="afterInteractive"
@@ -78,6 +71,13 @@ export default function Index({
         `,
         }}
     />
+      </Head>
+
+      <HeroSection heroData={heroData} />
+      <AboutSection aboutData={aboutData} />
+      <PortfolioSection portfolioData={portfolioData} />
+      <BlogSection blogData={blogData} />
+      <ContactSection contactData={contactData} />
     </>
   );
 }
